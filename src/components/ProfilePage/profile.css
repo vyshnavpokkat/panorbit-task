@@ -1,0 +1,447 @@
+.profileContainer {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--light);
+    height: auto;
+    position: absolute;
+    top: 0
+}
+
+.sidenav-container {
+    margin: 2rem;
+
+}
+
+.w3-main {
+
+    margin-left: 280px;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    height: 90vh;
+}
+
+#mySidebar {
+    width: 220px;
+    height: 90vh;
+    background-color: var(--blue);
+    color: var(--textcolor);
+    border-radius: 15px;
+    text-align: left;
+    font-weight: 500;
+
+}
+
+#mySidebar ul {
+    position: absolute;
+    top: 35%;
+    left: 0;
+    width: 100%;
+}
+
+#mySidebar ul li {
+    position: relative;
+    width: 200%;
+    list-style: none;
+    display: inline-block;
+
+}
+
+#mySidebar ul li {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+}
+
+#mySidebar ul li #navElement {
+
+    display: block;
+    min-width: 60px;
+}
+
+#mySidebar ul li:hover #navElement::before {
+    content: "\203A";
+    color: var(--textcolor);
+    position: absolute;
+    right: 0;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background: var(--grey);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    top: 9px;
+    transition: 0.3s ease-in-out;
+    font-size: 36px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+#navElement {
+    color: var(--textcolorWhite);
+    font-size: 16px;
+    cursor: pointer;
+}
+#navElement2 {
+    font-size: 19px;
+    font-weight: bold;
+    color: var(--light);
+    cursor: pointer;
+}
+
+#navElement:hover {
+    font-size: 19px;
+    font-weight: bold;
+    color: var(--light);
+}
+
+#Underlinestyle {
+    background-color: var(--textcolor);
+    margin-left: -0.2rem;
+    margin-bottom: .4rem;
+    /* margin-top: -.1rem; */
+}
+
+.w3-teal,
+.w3-hover-teal:hover {
+    color: #0b0b0b !important;
+    background-color: var(--light) !important;
+}
+
+.contentArea {
+    background-color: var(--light);
+    width: 100%;
+    min-height: 92%;
+    height: auto;
+    overflow: hidden;
+}
+
+.data-container hr {
+    width: 97%;
+    height: 2px;
+
+}
+
+#topLeftHead {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 18px;
+    float: left;
+}
+
+.topRightHead {
+    float: right;
+    cursor: pointer;
+}
+
+.topRightHead-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    float: left;
+    margin: 1rem;
+}
+
+.topRightHead-name {
+    float: left;
+    margin-top: 1.4rem;
+}
+
+#toggleButton {
+    float: left;
+    border-radius: 50px !important;
+    color: var(--light) !important;
+    background-color: var(--blue) !important;
+    margin: .4rem;
+}
+
+@media screen and (max-width:992px) {
+    #topLeftHead {
+        margin-left: 1rem;
+    }
+
+    .sidenav-container {
+        margin: 0;
+    }
+
+    #topLeftHead {
+        margin-top: 1.5rem;
+    }
+
+    .topRightHead {
+        margin-top: .3rem;
+    }
+
+    .topRightHead-name {
+        display: none;
+    }
+
+    #mySidebar {
+        width: 300px;
+        height: 100%;
+        background-color: var(--blue);
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+
+    }
+
+}
+
+#navCloseButton {
+    float: left;
+    border-radius: 50px !important;
+    color: var(--blue) !important;
+    background-color: var(--light) !important;
+    margin-left: 1.8rem;
+    margin-top: .8rem;
+    border: 3px solid var(--textcolorWhite);
+    font-size: 18px !important;
+    font-weight: 900 !important;
+}
+
+#Chatbtn {
+    position: fixed;
+    bottom: 0;
+    right: 10%;
+    width: 250px;
+    height: 50px;
+    color: #ffffff;
+    background-color: var(--blue);
+    font-size: 20px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding-left: 1rem;
+    padding-top: .5rem;
+    cursor: pointer;
+}
+
+.ChatBtnHead {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#rgtAln {
+
+    margin-left: 8rem;
+
+}
+
+#rgtAln2 {
+
+    margin-left: 4rem;
+
+}
+
+.iconS2 {
+    font-size: 4px;
+}
+
+.chatbtn-active {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    position: fixed;
+    bottom: 0;
+    right: 10%;
+    width: 250px;
+    height: 400px;
+    color: var(--textcolor);
+    background-color: var(--light);
+    font-size: 20px;
+    border-right: 1px solid var(--blue);
+    border-left: 1px solid var(--blue);
+    cursor: pointer;
+}
+
+.scrollContainer {
+    width: 100%;
+    height: 400px;
+    overflow-y: scroll;
+    cursor: pointer;
+}
+
+#ChatHead {
+    background-color: var(--blue);
+    color:var(--light);
+    height: 50px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    padding-left: 1rem;
+    padding-top: .5rem;
+    cursor: pointer;
+
+}
+
+#profile-popup {
+    position: fixed;
+    top: 14%;
+    right: 2%;
+    width: 300px;
+    height: 430px;
+    color: #131212;
+    background-color: #ffffff;
+    font-size: 20px;
+    border-radius: 10px;
+    overflow-y: scroll;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+#profile-popup::-webkit-scrollbar {
+    display: none;
+}
+
+#profile-ImgMain2 {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#popup-mainName {
+    text-align: center;
+    color: var(--dark);
+    font-size: 15px;
+}
+
+#popup-mainName2 {
+    margin-top: -1rem;
+    text-align: center;
+    color: var(--textcolor);
+    font-size: 13px;
+}
+
+#display-none {
+    display: none;
+}
+
+.display-none {
+    display: none;
+}
+
+.langprofile-image2 {
+    width: 5vmin;
+    height: 5vmin;
+    border-radius: 70px;
+    margin-left: 5vmin;
+    margin-right: 1vmin;
+    margin-bottom: 1vmin;
+    margin-top: 1vmin;
+}
+
+.landingprofile-name2 {
+    color: #000;
+    font-size: 14px;
+    margin-top: 2vmin;
+    margin-left: 1vmin;
+}
+
+.popup-singlecard {
+    width: 80%;
+    margin: auto;
+}
+
+.popup-singlecardMain {
+    position: sticky;
+    top: 0rem;
+    background-color: #ffffff;
+    z-index: 1;
+}
+
+.btncomponent {
+    width: 100%;
+    background-color: var(--light);
+    position: sticky;
+    bottom: 0;
+    text-align: center;
+}
+
+#logBtn {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 40px;
+    background-color: var(--red);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    height: 40px;
+    width: 100px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px) {
+    #Chatbtn {
+        display: none;
+    }
+}
+
+.langprofile-image3 {
+    width: 3.5vmin;
+    height: 3.5vmin;
+    border-radius: 50px;
+    margin-left: 3vmin;
+    margin-right: 1vmin;
+    margin-bottom: 1vmin;
+    margin-top: 2vmin;
+}
+
+.langprofile-image4 {
+    width: 3.5vmin;
+    height: 3.5vmin;
+    border-radius: 50px;
+}
+
+.landingprofile-name3 {
+
+    color: var(--textcolor);
+    font-size: 13px;
+    margin-top: 1vmin;
+    margin-left: 1vmin;
+}
+
+#active-icon {
+
+    color: var(--green);
+    font-size: 10px;
+    float: right;
+    margin-top: 1.4rem;
+    margin-right: 2rem;
+}
+
+.iconS {
+    margin-top: .5rem;
+}
+
+#Chattext {
+    margin-left: .5rem;
+}
+
+#Chattext2 {
+    margin-left: .5rem;
+    font-size: 13px;
+}
+
+.chatbtn-active2 {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    position: fixed;
+    bottom: 0;
+    right: 28%;
+    width: 250px;
+    height: 300px;
+    color: var(--textcolor);
+    background-color: var(--light);
+    font-size: 20px;
+    border-right: 1px solid var(--blue);
+    border-left: 1px solid var(--blue);
+}

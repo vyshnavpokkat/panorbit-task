@@ -1,0 +1,23 @@
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+body{
+font-family:Arial, Helvetica, sans-serif;
+
+}
+
+:root {
+  --dark: #000;
+  --blue: #6930c3;
+  --grey: #F0EDEF;
+  --light: #fcfcfc;
+  --textcolor:#585858;
+  --textcolorWhite:#bec4d2;
+  --green:#005a1b;
+  --red:#cf0e0e;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+
+}

@@ -1,0 +1,149 @@
+.personalContainer {
+    width: 100%;
+    height: 90%;
+    
+}
+
+.personalContainer-left {
+    width: 35%;
+    height: 96%;
+    background-color: var(--light);
+    float: left;
+    margin-top: 2%;
+    border-right: 2px solid var(--textcolorWhite);
+}
+
+.personalContainer-right {
+    width: 65%;
+    height: 100%;
+    background-color:var(--light);
+    float: left;
+}
+
+#profile-ImgMain {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+
+}
+
+.textArea table {
+    margin: auto;
+    
+}
+.textArea2 table{
+    margin-left: 10%;
+    margin-bottom: -3rem;
+}
+#hrStyle1{
+    width: 80%;
+    margin-top: .8rem;
+    height: 2px;
+    background-color: var(--textcolorWhite);
+
+}
+#hrStyle2{
+    display: none;
+    width: 80%;
+    margin-top: .8rem;
+    height: 2px;
+    background-color: var(--textcolorWhite);
+}
+
+#mapStyle {
+    width: 80%;
+    height: 300px;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 18px;
+    border: none;
+}
+#mapdata{
+    text-align: right;
+    margin-right: 10%;
+    cursor: pointer;
+
+}
+.BoldData{
+    font-weight: bold;
+    margin-right: 15px;
+}
+#textArea-Name{
+    text-align: center;
+    font-weight: bold;
+    color: var(--textcolor);
+    font-size: 20px;
+
+}
+.rgtAl{
+    text-align: right;
+    color: var(--textcolor);
+}
+.lfttAl{
+    text-align: left;
+    color: var(--textcolor);
+}
+.seperator{
+    width: 40px;
+    text-align: center;
+    color: var(--textcolor);
+
+}
+.textArea-head{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 1rem;
+    color: var(--textcolor);
+}
+.textArea-head2{
+
+    text-align: left;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    font-size: 20px;
+    color: var(--textcolor);
+
+}
+
+@media screen and (max-width:768px) {
+    .personalContainer-left{
+        border-right: 0px;
+    }
+    #hrStyle1{
+        margin-top: 2rem;
+    }
+    #hrStyle2{
+        display: block;
+        margin-top: 2rem;
+    }
+    .personalContainer {
+        
+        height: auto;
+        overflow: hidden;
+    }
+
+    .personalContainer-left {
+        width: 100%;
+    }
+
+    .personalContainer-right {
+        width: 100%;
+    }
+    #mapStyle {
+        margin-top: 4rem;
+    }
+    .textArea-head2{
+    text-align: center;
+    margin-top: 3rem;
+    }
+    .textArea2 table{
+        margin: auto;
+    }
+}
